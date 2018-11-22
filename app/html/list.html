@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<header></header>
+	<!-- banner图 -->
+	<div class="div" id="div">
+		<ul>
+			<li><img src="/images/about/banner.jpg"></li>
+			<li><img src="/images/about/banner1.jpg"></li>
+			<li><img src="/images/about/banner4.jpg"></li>
+			<li><img src="/images/about/banner3.jpg"></li>
+			<li><img src="/images/about/banner5.jpg"></li>
+		</ul>
+		<ol>
+
+		</ol>
+		 <a href="javascript:;" id="left_go">&laquo;</a>
+	     <a href="javascript:;" id="right_go">&raquo;</a>
+	</div>
+	<!-- 中间搜索部分 -->
+	<div class="page-wrapper">
+		<div class="filer-group">
+			<div class="left"><a href="http://localhost:2110/html/list.html">全部商品</a></div>
+			<div class="conter"><span>所有系列</span></div>
+			<div class="search-box">
+				<input type="text" placeholder="输入关键字">
+				<span><img src="/images/about/search-icon.png" alt=""></span>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 商品列表 -->
+	<div class="hot-cake">
+		<ul id="proList"></ul>
+		<script type="text/html" id="pro-template">
+			{{each products item i}}
+			<li>
+				<img src="{{item.img}}">
+				<p>{{item.English}}</p>
+				<p>{{item.title}}</p>
+				<span>￥{{item.price}}</span>
+				<a href="http://localhost:2110/html/detail.html?id={{item.id}}">查看详情</a>
+			</li>
+			{{/each}}
+		</script>
+		<div class="pic">
+			<img src="/images/about/zaixian.png">
+		</div>
+	</div>
+
+	<div class="cake-theme">
+		<ul class="cake-theme-ul" id="cake-theme-ul"></ul>
+		<script type="text/html" id="pro-theme">
+			{{each project item i}}
+			<li>
+				<a href="javascript:;">
+					<p>{{ item.title }}</p>
+					<i>{{ item.English }}</i>
+					<img src="{{ item.img }}" alt="">
+				</a>
+			</li>
+			{{/each}}
+		</script>
+		<div class="pic-left">
+			<img src="/images/detail/big1.jpg" alt="">
+		</div>
+		<div class="pic-conter">
+			<img src="/images/detail/big2.jpg" alt="">
+		</div>
+		<div class="pic-right">
+			<img src="/images/detail/big3.jpg" alt="">
+		</div>
+	</div>
+	<footer></footer>
+	<script src="/libs/require/require.js" data-main="/js/list.js"></script>
+</body>
+</html>

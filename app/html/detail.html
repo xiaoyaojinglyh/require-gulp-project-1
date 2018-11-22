@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/css/detail.css">
+</head>
+<body>
+	<header></header>
+	<div class="box1-middle">
+		<div class="success" style="display: none;">
+			已成功加入购物车
+		</div>
+			<div class="content1" id="content"></div>
+				<script type="text/html" id="detail-template">
+				 <div class="left" id="left">
+				 	<img id="img1" class="ac" src="{{ product.img }}">
+				 	<img src="{{ product.img1 }}" alt="">
+				 	<img src="{{ product.img2 }}" alt="">
+					<div class="move"></div>
+				</div>
+				<!-- 放大镜效果鼠标移入要显示的div -->
+				<div class="left-big">
+					<img class="ac bigImg" src="{{ product.imgbig }}">
+					<img src="{{ product.imgbig1 }}" class="bigImg">
+				 	<img src="{{ product.imgbig2 }}" class="bigImg">
+
+				</div>
+				<!-- 右边的商品信息 -->
+				<div class="right_1">
+					<p class="p8">{{ product.English }}</p>
+						<p id="title" class="p8">{{ product.title }}</p>
+						<p id="dprice" class="p8">￥{{ product.price }}</p>
+					
+					<p class="p1">Cake type | 蛋糕种类</p>
+					<p class="p2">慕斯蛋糕</p>
+					<form class="form">
+						
+						<span>数量：</span><input type="text" value="1" class="sum">
+						<span>尺寸：</span><input type="text" value="6寸" id="size">
+						<div class="add"></div>
+						<img src="/images/img/double-icon.png" alt="">
+						<div class="increase"></div>
+						<img src="/images/img/double-icon.png" class="img" alt="">
+					</form>
+					<p class="p3">
+						适合2-4人食用 &nbsp;&nbsp;含5套餐具<br/>
+						需提前5小时预订
+					</p>
+					<div class="addCart">
+						<button class="add_shopping"><a href="javascript:;">加入购物车</a></button>
+						<a href="javascript:;">立即购买</a>
+					</div>
+					<div class="right-bottom">
+						<p class="p4">Sweetness level | 甜度</p>
+						<p class="p5">
+							<img src="/images/img/star-icon.png">
+							<img src="/images/img/star-icon.png">
+							<img src="/images/img/star-icon.png">
+							<img src="/images/img/star-light-icon.png">
+							<img src="/images/img/star-light-icon.png">
+						</p>
+						<p class="p6">Preservation conditions | 保鲜条件</p>
+						<p class="p7">最佳保存温度0°C，最佳赏味期为24小时内<br/>
+ 						食用前请在室温下放置20分钟，口感更佳
+					</p>
+					
+					</div>
+				</div>
+				<!-- 左下角的那三张小图的div -->
+				<div class="bottom1">
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="{{ product.smallimg }}" alt=""></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="{{ product.smallimg1 }}" alt=""></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="{{ product.smallimg2 }}" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			
+		</script>
+		
+
+			<div class="detail-bottom">
+				<div class="left1">
+					<h2><span class="hotDoor">热门推荐</span></h2>
+						<ul id="proList"></ul>
+						<script type="text/html" id="pro-template">
+							{{each products item i}}
+							<li>
+								<img src="{{item.img}}">
+								<p class="p_1">{{item.English}}</p>
+								<p class="p_1">{{item.title}}</p>
+								<span>￥318.00</span>
+								<a href="javascript:;">购买</a>
+							</li>
+							{{/each}}
+							</script>
+				</div>
+					<div class="pic">
+						<img src="/images/about/zaixian.png">
+					</div>
+			<div class="idea" id="idea">
+     			 <div class="idea-title" id="idea-title">
+	     			  <dl class="ac" data-index="0">
+	     			  	<dt> 优质原材料</dt>
+	     			  	<dd class="ac">RAW  MATERIALS</dd>
+	     			  </dl>
+					  <dl data-index="1">
+	     			  	<dt>设计理念</dt>
+	     			  	<dd> INSPIRATION</dd>
+	     			  </dl>
+	 				  <dl data-index="2">
+	     			  	<dt>为爱发声</dt>
+	     			  	<dd>VOICE FOR  LOVE</dd>
+	     			  </dl>
+	 				  <dl data-index="3">
+	     			  	<dt>配送须知</dt>
+	     			  	<dd>DELIVERY  CAUTIONS</dd>
+	     			  </dl>
+	     	 	 </div>
+
+			     	 <div class="idea-bottom" id="tab">
+			     	 	<img class="ac" src="/images/about/guanggao.jpg" alt="">
+			     	 	<img src="/images/about/guanggao1.jpg" alt="">
+			     	 	<img src="/images/about/guanggao3.jpg" alt="">
+			     	 	<img src="/images/about/guanggao4.jpg" alt="">
+			     	 </div>
+			
+		</div>
+	</div>
+</div>
+	<footer></footer>
+	<script src="/libs/require/require.js" data-main="/js/detail_1.js"></script>
+</body>
+</html>
+
+

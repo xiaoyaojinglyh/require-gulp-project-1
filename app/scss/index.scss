@@ -1,0 +1,671 @@
+@import "component/footer.scss";
+@import "component/header.scss";
+$L:left;
+$W:95px;
+$H:76px;
+$a:100%;
+*{margin: 0;padding: 0;}
+body{font-family: "Microsoft YaHei";font-size: 12px;}
+
+.box1{
+	width: $a;
+	/* banner */
+	& .banner{
+		margin: 0 auto;
+		height:601px;
+		float: $L;
+		margin-top: 93px;
+		position: relative;
+		img{
+			height: 601px;
+		}
+	}
+	& .span{
+		width: 73px;
+		height: 66px;
+		position: absolute;
+		left: 48%;
+		top: 655px;
+		z-index: 111;
+		cursor: pointer;
+		img{
+			width: $a;
+			height: $a;
+		}
+	}
+	/* 第一个隐藏的div样式 */
+	&-middle{
+		width: $a;
+		height: 1015px;
+		float: $L;
+		display: none;
+		& .content{
+			width: 1196px;
+			height: 965px;
+			margin:0 auto;
+			position: relative;
+			& .left-go{
+				position: absolute;
+				top: 40px;
+				left: 350px;
+			}
+			& .right-go{
+				position: absolute;
+				top: 40px;
+				right: 350px;
+			}
+				& .top{
+					width: 380px;
+					height: $W;
+					margin: 0 auto;
+					margin-top: 50px;
+					& ul{
+						li{
+							width: $W;
+							height: $W;
+							& a img{
+								width: $W;
+								height: $W;
+								opacity: 0.5;
+								&.ac{
+									opacity: 1;
+								}
+							}
+						}
+					}
+				}
+			}
+			& .left{
+				width: 600px;
+				height: 600px;
+				float: $L;
+				position: relative;
+				img{
+					width: 600px;
+					height: 600px;
+					position: absolute;
+					left: 0;
+					top: 0;
+					display: none;
+					&.ac{
+						display: block;
+					}
+				}
+				& .move{
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 200px;
+					height: 200px;
+					cursor:move;
+					border:1px solid #cccccc;
+					background:rgba(255,255,255,0.3);
+					display: none;
+					z-index: 222;
+				}
+			}
+			& .left-big{
+				width: 400px;
+				height: 400px;
+				position: absolute;
+				left:610px;
+				border: 1px solid #333333;
+				overflow: hidden;
+				display: none;
+				& .bigImg{
+					position: absolute;
+					width: 1200px;
+					height: 1200px;
+					display: none;
+					&.ac{
+						display: block;
+					}
+				}
+			}
+			& .right{
+				width: 520px;
+				height: $a;
+				float: $R;
+				& p{
+					font-size: 30px;
+					text-align: right;
+					font-weight: bold;
+					line-height: 45px;
+					margin-#{$R}:20px;
+				}
+				& .p1{
+					font-weight: normal;
+					margin-top: 30px;
+					font-size: 16px;
+					color: #999999;
+				}
+				& .p2{
+					font-weight: normal;
+					font-size:16px;
+					color: #333333;
+				}
+				& .form{
+					width: 170px;
+					float: $R;
+					margin-#{$R}:20px;
+					margin-top:50px;
+					position:relative;
+					& input{
+						float: right;
+						width: 120px;
+						height: 26px;
+						border:none;
+						border:1px solid #cccccc;
+						border-radius: 5px;
+						margin-top: 5px;
+						text-align: center;
+						
+					}
+					
+					& span{
+						float: $L;
+						height: 33px;
+						line-height: 33px;
+					}
+					.add{
+						position: absolute;
+						right:0;
+						top: 6px;
+						width: 23px;
+						height: 13px;
+						background:red; 
+						z-index: 1111;
+						opacity: 0;
+						cursor: pointer;
+					}
+					img{
+						height: 26px;
+						position: absolute;
+						right: 1px;
+						top: 6px;
+						cursor: pointer;
+					}
+					.increase{
+						position: absolute;
+						right:0;
+						top: 20px;
+						width: 23px;
+						height: 13px;
+						background:red; 
+						z-index: 1111;
+						opacity: 0;
+						cursor: pointer;
+					}
+					.img_2{
+						height: 26px;
+						position: absolute;
+						right: 1px;
+						top:39px;
+					}
+
+				} 
+
+				& .p3{
+					width: 100%;
+					margin-top: 25px;
+					line-height: 25px;
+					float: $R;
+					font-size: 16px;
+					color: #666666;
+					font-weight: normal;
+				}
+
+				& .addCart{
+					width: 335px;
+					height: 33px;
+					float: right;
+					margin-top:50px;
+					& button{
+						
+					    height: 33px;
+					    line-height: 33px;
+					    font-size: 16px;
+					    float: left;
+					    border: none;
+					    margin-right: 20px;
+					  	background: #333333;
+					    cursor: pointer;
+					    &　a{
+					    	display: block;
+					    	width: 127px;
+				    	   color: white;
+				    	   padding-left: 20px;
+				    	   background:url(../../images/img/btn-cart-icon.png) no-repeat 20px center;
+					    }
+					}
+					& a:nth-child(2){
+						display: block;
+					    width: 146px;
+					    height: 31px;
+					    line-height: 33px;
+					    text-align: center;
+					    font-size:16px;
+					    float: left;
+					    margin-right: 20px;
+					   border:1px solid #333333;
+					    cursor: pointer;
+					}
+				}
+				& .right-bottom{
+					margin-top:50px;
+					width: 100%;
+					height: auto;
+					float: right;
+					& .p4{
+						font-weight: normal;
+						font-size: 16px;
+						height: 30px;
+						color: #999999;
+					}
+					& .p5{
+						font-weight: normal;
+						font-size: 16px;
+						height: 30px;
+						color: #999999;
+					}
+					& .p6{
+						font-size: 16px;
+						color: #999999;
+						font-weight:normal;
+					}
+					& .p7{
+						margin-top: 20px;
+						font-size: 16px;
+						color: #333333;
+						height: 30px;
+						line-height: 30px;
+						font-weight: normal;
+					}
+					& .btn5{
+						width: 120px;
+						height: 30px;
+						background:#333333;
+						margin-top: 70px;
+						font-size: 18px;
+						border: none;
+						float: right;
+						color: white;
+						cursor:pointer;
+						border-top-left-radius:50px;
+					}
+				}
+			}
+			& .bottom1{
+					width: 600px;
+					height:$H;
+					margin: 0 auto;
+					text-align: center;
+					float: $L;
+					position: relative;
+					& ul{
+						width: 280px;
+						margin:0 auto;
+						position: absolute;
+						left: 180px;
+						top: 0;
+						display: none;
+						&.ac{
+							display: block;
+						}
+						li{
+							width: $H;
+							height: $H;
+							cursor: pointer;
+							& a img{
+								width: $H;
+								height: $H;
+							}
+						}
+					}
+				}
+	}
+	/* 第二个banner */
+	& .banner1{
+		margin: 0 auto;
+		height:601px;
+		float: $L;
+		position: relative;
+		img{
+			height: 601px;
+		}
+		& p{
+		width: 73px;
+		height: 66px;
+		position: absolute;
+		left: 48%;
+		top: 570px;
+		cursor: pointer;
+			& .img{
+				width: $a;
+				height: $a;
+			}
+		}
+	}
+	/* 第二个隐藏的div样式 */
+	&-middle1{
+			width: $a;
+			height: 1015px;
+			float: $L;
+			display: none;
+			& .content{
+			width: 1196px;
+			height: 965px;
+			margin:0 auto;
+			position: relative;
+			& .left-go{
+				position: absolute;
+				top: 40px;
+				left: 350px;
+			}
+			& .right-go{
+				position: absolute;
+				top: 40px;
+				right: 350px;
+			}
+				& .top{
+					width: 380px;
+					height: $W;
+					margin: 0 auto;
+					margin-top: 50px;
+					& ul{
+						li{
+							width: $W;
+							height: $W;
+							& a img{
+								width: $W;
+								height: $W;
+							}
+						}
+					}
+				}
+			}
+			& .smallDiv{
+				width: 600px;
+				height: 600px;
+				float: $L;
+				position: relative;
+				img{
+					width: 600px;
+					height: 600px;
+				}
+				& .move1{
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 200px;
+					height: 200px;
+					cursor: pointer;
+					display: none;
+					border: 1px solid #cccccc;
+					background:rgba(255,255,255,0.3);
+					z-index: 222;
+				}
+			}
+			& .bigDiv{
+				width: 400px;
+				height: 400px;
+				position: absolute;
+				left:610px;
+				display: none;
+				border: 1px solid #333333;
+				overflow: hidden;
+				& .bigImg1{
+					position: absolute;
+					width: 1200px;
+					height: 1200px;
+				}
+			}
+			& .right{
+				width: 520px;
+				height: $a;
+				float: $R;
+				& p{
+					font-size: 30px;
+					text-align: right;
+					font-weight: bold;
+					line-height: 45px;
+					margin-#{$R}:20px;
+				}
+				& .p1{
+					font-weight: normal;
+					margin-top: 30px;
+					font-size: 16px;
+					color: #999999;
+				}
+				& .p2{
+					font-weight: normal;
+					font-size:16px;
+					color: #333333;
+				}
+				& .form{
+					width: 170px;
+					float: $R;
+					margin-#{$R}:20px;
+					margin-top:50px;
+					& input{
+						float: right;
+						width: 120px;
+						height: 26px;
+						border:none;
+						border:1px solid #cccccc;
+						border-radius: 5px;
+						margin-top: 5px;
+						text-align: center;
+						position:relative;
+					}
+					& .btn1{
+						position: absolute;
+						right: 22px;
+						top: 405px;
+						width: 20px;
+						height: 13px;
+						line-height: 13px;
+						border: none;
+
+					}
+					& .btn2{
+						position: absolute;
+						right: 22px;
+						top: 418px;
+						width: 20px;
+						height: 14px;
+						line-height: 13px;
+						border: none;
+
+					}
+					& .btn3{
+						position: absolute;
+						right: 22px;
+						top: 440px;
+						width: 20px;
+						height: 13px;
+						line-height: 13px;
+						border: none;
+
+					}
+					& .btn4{
+						position: absolute;
+						right: 22px;
+						top: 450px;
+						width: 20px;
+						height: 14px;
+						line-height: 13px;
+						border: none;
+
+					}
+					& span{
+						float: $L;
+						height: 33px;
+						line-height: 33px;
+					}
+
+				} 
+
+				& .p3{
+					width: 100%;
+					margin-top: 25px;
+					line-height: 25px;
+					float: $R;
+					font-size: 16px;
+					color: #666666;
+					font-weight: normal;
+				}
+
+				& .addCart{
+					width: 335px;
+					height: 33px;
+					float: right;
+					margin-top:50px;
+					& button{
+						
+					    height: 33px;
+					    line-height: 33px;
+					    font-size: 16px;
+					    float: left;
+					    border: none;
+					    margin-right: 20px;
+					  	background: #333333;
+					    cursor: pointer;
+					    &　a{
+					    	display: block;
+					    	width: 127px;
+				    	   color: white;
+				    	   padding-left: 20px;
+				    	   background:url(../../images/img/btn-cart-icon.png) no-repeat 20px center;
+					    }
+					}
+					& a:nth-child(2){
+						display: block;
+					    width: 146px;
+					    height: 31px;
+					    line-height: 33px;
+					    text-align: center;
+					    font-size:16px;
+					    float: left;
+					    margin-right: 20px;
+					   border:1px solid #333333;
+					    cursor: pointer;
+					}
+				}
+				& .right-bottom{
+					margin-top:50px;
+					width: 100%;
+					height: auto;
+					float: right;
+					& .p4{
+						font-weight: normal;
+						font-size: 16px;
+						height: 30px;
+						color: #999999;
+					}
+					& .p5{
+						font-weight: normal;
+						font-size: 16px;
+						height: 30px;
+						color: #999999;
+					}
+					& .p6{
+						font-size: 16px;
+						color: #999999;
+						font-weight:normal;
+					}
+					& .p7{
+						margin-top: 20px;
+						font-size: 16px;
+						color: #333333;
+						height: 30px;
+						line-height: 30px;
+						font-weight: normal;
+					}
+					& .btn5{
+						width: 120px;
+						height: 30px;
+						background:#333333;
+						margin-top: 70px;
+						font-size: 18px;
+						border: none;
+						float: right;
+						color: white;
+						border-top-left-radius:50px;
+					}
+				}
+			}
+			& .bottom1{
+					width: 600px;
+					height:$H;
+					margin: 0 auto;
+					text-align: center;
+					float: $L;
+					& ul{
+						width: 280px;
+						margin:0 auto;
+						li{
+							width: $H;
+							height: $H;
+							cursor: pointer;
+							& a img{
+								width: $H;
+								height: $H;
+							}
+						}
+					}
+				}
+		}
+	
+	/* 底部 */
+	& b{
+		float: $L;
+		display: block;
+		width: 100%;
+		height: 29px;
+		margin-top:107px;
+		text-align: center;
+		font-size: 28px;
+	}
+	& .bottom{
+		width: 100%;
+		height: 660px;
+		margin-top: 30px;
+		float: $L;
+		& .content2{
+			width: 1196px;
+			height: 660px;
+			margin: 0 auto;
+			& .left{
+				width: 593px;
+				height: 586px;
+				float: $L;
+				img{
+					width: 593px;
+					height: 586px;
+				}
+			}
+			& .right{
+				width: 593px;
+				height: 586px;
+				float: right;
+				img{
+					width: 593px;
+					height: 586px;
+				}
+			}
+		}
+	}
+}
+
+
+.pic{
+	width: 150px;
+	height: 78px;
+	float: left;
+	z-index: 555;
+	position: fixed;
+	left: 90%;
+	bottom: 20px;
+	cursor: pointer;
+}

@@ -1,0 +1,149 @@
+
+@import "component/header.scss";
+@import "component/footer.scss";
+body{width: 100%;font-family: "Microsoft YaHei";font-size: 12px}
+.banner{
+	float: left;
+	width: 100%;
+	height: 612px;
+	margin-top: 94px;
+	position: relative;
+
+	.type-pic{
+	    width: 494px;
+	    height: 184px;
+	    margin-top:100px;
+	    margin-left: 100px;
+	    float: left;
+	    img{
+	    	width: 100%;
+	    	height: 100%;
+	    }
+	}
+	.conter-bg{
+		float: left;
+	    position: absolute;
+	    top: -9px;
+	    left:458px;
+	    width: 0;
+	    height: 0;
+	    border-bottom: 621px solid #d3b145;
+	    border-left: 339px solid transparent;
+	}
+	.sweet{
+		width: 300px;
+		height: 29px;
+		font-size: 24px;
+		margin-top: 20px;
+		color: #d3b145;
+		position: absolute;
+		left: 100px;
+		top: 300px;
+	}
+	.right-bg{
+		position: absolute;
+		right: 0;
+		top: -8px;
+		width: 466px;
+		height: 620px;
+		background:#d3b145;
+	}
+	.regsiter-form{
+		width: 322px;
+		height: 396px;
+		background:white;
+		position: absolute;
+		right: 100px;
+		top: 100px;
+
+		h2{
+			width: 100%;
+			height: 80px;
+			text-align: center;
+			line-height: 100px;
+			color: #d3b145;
+			font-weight: normal;
+		}
+		.form{
+			width: 100%;
+			height: 318px;
+			text-align:center;
+			position: relative;
+			input{
+				padding-left: 20px;
+				width: 217px;
+				height: 28px;
+				border: 1px solid #cccccc;
+				border-radius: 5px;
+				margin-top:20px;
+			}
+			
+			button{
+				width: 235px;
+				height: 30px;
+				margin-top:40px;
+				background:#333333;
+				font-size:20px;
+				color: white;
+				border: none;
+			}
+		}
+		.line-icon{
+			width: 123px;
+			height: 8px;
+			float: left;
+			position: absolute;
+			right: 0;
+			top: 300px;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.forget{
+			width: 100px;
+			position: absolute;
+			top: 270px;
+			right: 30px;
+			cursor: pointer;
+		}
+		.left-remenber{
+			width: 65px;
+			height: 16px;
+			position: absolute;
+			left: 50px;
+			top: 270px;
+		}
+		.line-icon1{
+			width: 123px;
+			height: 8px;
+			float: left;
+			position: absolute;
+			left: 0;
+			top: 310px;
+			transform: rotate(180deg);
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		h3{
+			position: absolute;
+			left: 133px;
+			top: 300px;
+		}
+		.wx-chat{
+			width: 30px;
+			height: 26px;
+			position: absolute;
+			left: 153px;
+			top: 330px;
+			cursor: pointer;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+

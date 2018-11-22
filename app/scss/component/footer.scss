@@ -1,0 +1,114 @@
+$L:left;
+$T:top;
+$R:right;
+body{font-size: 13px;color: #333333;}
+.footer{
+	border-#{$T}:1px solid #c9c9c9;
+	width: 100%;
+	float: $L;
+	background:url(../../images/list1.jpg);
+	& .content{
+		height: 234px;
+		width: 1196px;
+		margin: 0 auto;
+		& .left{
+			width: 260px;
+			height: 206px;
+			float: $L;
+			& .logo{
+				width: 222px;
+				height: 112px;
+				background: url(../../images/LOGO-1.png) no-repeat center center;
+			}
+			& p{
+				height: 94px;
+				line-height: 24px;
+			}
+		}
+			& .center{
+			width: 610px;
+			height: 135px;
+			float: $L;
+			padding-#{$T}:71px;
+			& ul{
+				li:nth-child(1){
+					width: 130px;
+				};
+				li{
+					width: 151px;
+					text-align: center;
+					background: url(../../images/list.jpg) no-repeat center right;
+				}
+				li:nth-child(4){
+					background: none;
+				}
+			}
+		}
+		& .right{
+			width: 266px;
+			height: 206px;
+			float: $R;
+			margin-#{$L}:53px;
+			margin-#{$T}:22px;
+			position:relative;
+			&-icon{
+				height: 53px;
+				& a{
+					display: block;
+					width: 35px;
+					height: 35px;
+					float: $L;
+					margin-#{$R}:37px;
+					img{
+						width: 35px;
+						height: 35px;
+					}
+				}
+			}
+			& .p-1{
+				line-height: 24px;
+			}
+			.weibo{
+				position: absolute;
+				top: -100px;
+				left: -35px;
+				width: 100px;
+				height: 100px;
+				display: none;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.weixin{
+				position: absolute;
+				top: -100px;
+				left: 35px;
+				width: 100px;
+				height: 100px;
+				display: none;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.taobao{
+				position: absolute;
+				top: -100px;
+				left: 110px;
+				width: 100px;
+				height: 100px;
+				display: none;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	
+
+	}
+
+	
+
+}
